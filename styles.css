@@ -7,27 +7,27 @@
 
 @font-face {
   font-family: "Lato-Light";
-  src: url("./assets/fonts/Lato-Light.ttf");
+  src: url("assets/fonts/Lato-Light.ttf");
 }
 
 @font-face {
   font-family: "Lato-Regular";
-  src: url("./assets/fonts/Lato-Regular.ttf");
+  src: url("assets/fonts/Lato-Regular.ttf");
 }
 
 @font-face {
   font-family: "Oswald-Bold";
-  src: url("./assets/fonts/Oswald-Bold.ttf");
+  src: url("assets/fonts/Oswald-Bold.ttf");
 }
 
 @font-face {
   font-family: "Lato-Italic";
-  src: url("./assets/fonts/Lato-Italic.ttf");
+  src: url("assets/fonts/Lato-Italic.ttf");
 }
 
 @font-face {
   font-family: "Lato-BoldItalic";
-  src: url("./assets/fonts/Lato-BoldItalic.ttf");
+  src: url("assets/fonts/Lato-BoldItalic.ttf");
 }
 
 body,
@@ -45,7 +45,7 @@ body,
 #hero-section {
   width: 100%;
   height: 100vh;
-  background-image: url("/assets/Hero.png");
+  background-image: url("assets/Hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -113,7 +113,7 @@ body,
 #history_section {
   width: 100%;
   height: 100vh;
-  background-image: url("/assets/peak.png");
+  background-image: url("assets/peak.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -272,7 +272,7 @@ input[name="image"] {
 #schedule_section {
   width: 100%;
   height: 94vh;
-  background-image: url("/assets/hero_footer.png");
+  background-image: url("assets/hero_footer.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
