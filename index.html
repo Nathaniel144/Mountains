@@ -16,170 +16,219 @@
           <img src="assets/logo.svg" alt="logo-img" />
 
           <nav class="navigation_links">
-            <a href="#"> <h3>01. HISTORY</h3> </a>
-            <a href="#"> <h3>02. TEAM</h3></a>
+            <a href="#middle_navigation"> <h3>01. HISTORY</h3> </a>
+            <a href="#climb_section"> <h3>02. TEAM</h3></a>
           </nav>
         </div>
       </section>
+      <section id="middle_navigation">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="logo-img" />
+          <div class="logo_name">
+            <h2>
+              LOS ANGELES <br />
+              MOUNTAINS
+            </h2>
+          </div>
+        </div>
 
-      <ul class="accordion">
-        <li>
+        <nav class="middle_navigation_links">
+          <a href="#history_section"> <h3>01. HISTORY</h3></a>
+          <a href="#climb_section"><h3>02. TEAM</h3></a>
+        </nav>
+      </section>
+
+      <section id="history_section">
+        <div class="history_heading">
+          <div>
+            <h1>01</h1>
+            <div>
+              <h3>HISTORY</h3>
+              <div></div>
+            </div>
+          </div>
+          <article class="description_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </article>
+        </div>
+        <div class="gallery">
+          <div class="slider">
+            <div class="images">
+              <input type="radio" name="image" id="img1" checked />
+              <input type="radio" name="image" id="img2" />
+              <input type="radio" name="image" id="img3" />
+              <input type="radio" name="image" id="img4" />
+              <input type="radio" name="image" id="img5" />
+
+              <div class="slide s1">
+                <img src="./assets/carousel_01.png" class="m1" alt="img2" />
+              </div>
+              <div class="slide">
+                <img src="./assets/carousel_02.png" class="m2" alt="img2" />
+              </div>
+              <div class="slide">
+                <img src="./assets/carousel_01.png" class="m3" alt="img3" />
+              </div>
+              <div class="slide">
+                <img src="./assets/carousel_02.png" class="m4" alt="img4" />
+              </div>
+              <div class="slide">
+                <img src="./assets/carousel_01.png" class="m5" alt="img5" />
+              </div>
+              <div class="slide">
+                <img src="./assets/carousel_02.png" class="m6" alt="img6" />
+              </div>
+              <div class="slide">
+                <img src="./assets/carousel_01.png" class="m7" alt="img7" />
+              </div>
+              <div class="slide">
+                <img src="./assets/carousel_02.png" class="m8" alt="img8" />
+              </div>
+            </div>
+            <div class="dots">
+              <label for="img1" class="dot"></label>
+              <label for="img2" class="dot"></label>
+              <label for="img3" class="dot"></label>
+              <label for="img4" class="dot"></label>
+              <label for="img5" class="dot"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="climb_section">
+        <div class="climb_content">
+          <div>
+            <h1>02</h1>
+            <div>
+              <h3>CLIMB</h3>
+              <div></div>
+            </div>
+          </div>
+          <h4>
+            Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+            gravida quis hendrerit ac. trustique ut quam. Vivamun suscipit
+            dignissim tortor nec congue
+          </h4>
+        </div>
+      </section>
+
+      <section id="bottom_navigation">
+        <div class="tabs_menu">
           <input
-            class="mobile"
             type="radio"
             name="accordion"
             id="first"
+            class="mobile"
             checked />
-          <label for="first">
-            <section id="middle_navigation">
-              <div class="logo">
-                <img src="assets/logo.svg" alt="logo-img" />
-                <div class="logo_name">
-                  <h2>
-                    LOS ANGELES <br />
-                    MOUNTAINS
-                  </h2>
-                </div>
-              </div>
+          <label for="first" class="tablinks active"> MOUNTAIN 1 </label>
 
-              <nav class="middle_navigation_links">
-                <a href="#"> <h3>01. HISTORY</h3></a>
-                <a href="#"><h3>02. TEAM</h3></a>
-              </nav>
-            </section>
-          </label>
-          <section id="history_section" class="content">
-            <div class="history_heading">
-              <div>
-                <h1>01</h1>
-                <div>
-                  <h3>HISTORY</h3>
-                  <div></div>
-                </div>
-              </div>
-              <article class="description_text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </article>
-            </div>
-            <div class="gallery">
-              <div class="slider">
-                <div class="images">
-                  <input type="radio" name="image" id="img1" checked />
-                  <input type="radio" name="image" id="img2" />
-                  <input type="radio" name="image" id="img3" />
-                  <input type="radio" name="image" id="img4" />
-                  <input type="radio" name="image" id="img5" />
+          <div class="content mobile">
+            <h2>SCHEDULE</h2>
+            <table>
+              <tr>
+                <td>25 Nov 2016</td>
+                <td>Vestibulum viverra</td>
+              </tr>
+              <tr>
+                <td>28 Nov 2016</td>
+                <td>Vestibulum viverra</td>
+              </tr>
 
-                  <div class="slide s1">
-                    <img src="assets/carousel_01.png" class="m1" alt="img2" />
-                  </div>
-                  <div class="slide">
-                    <img src="assets/carousel_02.png" class="m2" alt="img2" />
-                  </div>
-                  <div class="slide">
-                    <img src="assets/carousel_01.png" class="m3" alt="img3" />
-                  </div>
-                  <div class="slide">
-                    <img src="assets/carousel_02.png" class="m4" alt="img4" />
-                  </div>
-                  <div class="slide">
-                    <img src="assets/carousel_01.png" class="m5" alt="img5" />
-                  </div>
-                  <div class="slide">
-                    <img src="assets/carousel_02.png" class="m6" alt="img6" />
-                  </div>
-                  <div class="slide">
-                    <img src="assets/carousel_01.png" class="m7" alt="img7" />
-                  </div>
-                  <div class="slide">
-                    <img src="assets/carousel_02.png" class="m8" alt="img8" />
-                  </div>
-                </div>
-                <div class="dots">
-                  <label for="img1" class="dot"></label>
-                  <label for="img2" class="dot"></label>
-                  <label for="img3" class="dot"></label>
-                  <label for="img4" class="dot"></label>
-                  <label for="img5" class="dot"></label>
-                </div>
-              </div>
-            </div>
-          </section>
-        </li>
-        <li>
-          <input class="mobile" type="radio" name="accordion" id="second" />
-          <label for="second">
-            <section id="climb_section">
-              <div class="climb_content">
-                <div>
-                  <h1>02</h1>
-                  <div>
-                    <h3>CLIMB</h3>
-                    <div></div>
-                  </div>
-                </div>
-                <h4>
-                  Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
-                  gravida quis hendrerit ac. trustique ut quam. Vivamun suscipit
-                  dignissim tortor nec congue
-                </h4>
-              </div>
-            </section>
-          </label>
-          <div id="last_section" class="content">
-            <section id="bottom_navigation">
-              <div class="tabs_menu">
-                <button class="tablinks">MOUNTAIN 1</button>
-                <button class="tablinks">MOUNTAIN 2</button>
-              </div>
-            </section>
+              <tr>
+                <td>18 Dec 2016</td>
+                <td>Vestibulum viverra</td>
+              </tr>
 
-            <section id="schedule_section">
-              <div class="schedule_details">
-                <h2>SCHEDULE</h2>
-
-                <table>
-                  <tr>
-                    <td>25 Nov 2016</td>
-                    <td>Vestibulum viverra</td>
-                  </tr>
-                  <tr>
-                    <td>28 Nov 2016</td>
-                    <td>Vestibulum viverra</td>
-                  </tr>
-
-                  <tr>
-                    <td>18 Dec 2016</td>
-                    <td>Vestibulum viverra</td>
-                  </tr>
-
-                  <tr>
-                    <td>7 Jan 2017</td>
-                    <td>Vestibulum viverra</td>
-                  </tr>
-                </table>
-              </div>
-
-              <div class="footer_section">
-                <div class="footer_items">
-                  <img src="assets/logo.svg" alt="logo" />
-                  <div class="logo_name">
-                    <h2>LOSANGELES<br />MOUNTAINS</h2>
-                  </div>
-
-                  <h3><em> COPYRIGHT 2016. ALL RIGHTS RESERVED </em></h3>
-                </div>
-              </div>
-            </section>
+              <tr>
+                <td>7 Jan 2017</td>
+                <td>Vestibulum viverra</td>
+              </tr>
+            </table>
           </div>
-        </li>
-      </ul>
+          <input type="radio" name="accordion" id="second" class="mobile" />
+          <label for="second" class="tablinks"> MOUNTAIN 2 </label>
+
+          <div class="content mobile">
+            <h2>SCHEDULE</h2>
+            <table>
+              <tr>
+                <td>25 Nov 2016</td>
+                <td>Vestibulum viverra</td>
+              </tr>
+              <tr>
+                <td>28 Nov 2016</td>
+                <td>Vestibulum viverra</td>
+              </tr>
+
+              <tr>
+                <td>18 Dec 2016</td>
+                <td>Vestibulum viverra</td>
+              </tr>
+
+              <tr>
+                <td>7 Jan 2017</td>
+                <td>Vestibulum viverra</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule_section">
+        <div class="schedule_details">
+          <h2>SCHEDULE</h2>
+          <table>
+            <tr>
+              <td>25 Nov 2016</td>
+              <td>Vestibulum viverra</td>
+            </tr>
+            <tr>
+              <td>28 Nov 2016</td>
+              <td>Vestibulum viverra</td>
+            </tr>
+
+            <tr>
+              <td>18 Dec 2016</td>
+              <td>Vestibulum viverra</td>
+            </tr>
+
+            <tr>
+              <td>7 Jan 2017</td>
+              <td>Vestibulum viverra</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <div class="footer_section">
+        <div class="footer_items">
+          <img src="./assets/logo.svg" alt="logo" />
+          <div class="logo_name">
+            <h2>LOSANGELES<br />MOUNTAINS</h2>
+          </div>
+
+          <h3><em> COPYRIGHT 2016. ALL RIGHTS RESERVED </em></h3>
+        </div>
+      </div>
     </div>
   </body>
 </html>
+
+<script>
+  const tablinks = document.querySelectorAll(
+    "#bottom_navigation .tabs_menu label.tablinks"
+  );
+  tablinks.forEach((tablink) => {
+    tablink.addEventListener("click", () => {
+      document.querySelector(".active")?.classList.remove("active");
+      tablink.classList.add("active");
+    });
+  });
+</script>

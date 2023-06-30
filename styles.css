@@ -258,15 +258,24 @@ input[name="image"] {
 #bottom_navigation {
   background-color: #414f6b;
   padding: 0px 15% 0px;
-  /* height: 6.7vh; */
 }
+
 #bottom_navigation .tablinks {
+  display: inline-block;
   padding: 10px;
   border: none;
   background-color: #d9d9d9;
   color: #414f6b;
   font-family: "Oswald-Bold", sans-serif;
 }
+#bottom_navigation .tablinks:hover {
+  background-color: #fff;
+}
+
+#bottom_navigation .tablinks.active {
+  background-color: #fff;
+}
+
 /* Bottom navigation section */
 /* Schedule Section */
 #schedule_section {
@@ -333,33 +342,12 @@ input[name="image"] {
   display: none;
 }
 
-@media (max-width: 650px) {
-  .mobile {
-    display: inline-block;
-  }
-  .accordion li {
-    list-style: none;
-  }
-  .accordion li label {
-    cursor: pointer;
-  }
+/* @media (max-width: 650px) {
   #middle_navigation,
   #climb_section {
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
   }
-  input[type="radio"] {
-    display: none;
-  }
-  .accordion .content {
-    background-color: #fff;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
-  }
-  .accordion input[type="radio"]:checked + label + .content {
-    max-height: 100vh;
-  }
-}
+} */
 
 @media (max-width: 500px) {
   /* First section */
@@ -454,10 +442,59 @@ input[name="image"] {
   /* Bottom navigation section */
   #bottom_navigation {
     padding: 0px 10% 0px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+  }
+  .tabs_menu {
+    position: relative;
   }
   #bottom_navigation .tablinks {
+    width: 100%;
+    display: block;
     padding: 10px;
-    font-size: 0.6rem;
+    border: none;
+    background-color: #d9d9d9;
+    color: #414f6b;
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 0.7rem;
+    margin-top: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .mobile {
+    display: inline-block;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  .content {
+    position: absolute;
+    top: 170%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  .content h2 {
+    font-size: 1rem;
+    color: #414f6b;
+    font-family: "Oswald-Bold", sans-serif;
+  }
+  .content table {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Lato-Regular";
+    font-size: 0.7rem;
+  }
+  .content tr {
+    display: block;
+    margin: 15px;
+  }
+  .content td {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  input[type="radio"]:checked + label + .content {
+    max-height: 60vh;
   }
   /* Bottom navigation section */
 
@@ -468,15 +505,18 @@ input[name="image"] {
   .schedule_details {
     padding: 0px 10% 0px;
     margin-top: 10%;
+    display: none;
   }
 
   .schedule_details h2 {
     font-size: 1rem;
+    display: none;
   }
   .schedule_details table {
     background-color: rgba(255, 255, 255, 0.5);
     font-family: "Lato-Regular";
     font-size: 0.7rem;
+    display: none;
   }
   /* Schedule Section */
 
